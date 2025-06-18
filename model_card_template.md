@@ -37,9 +37,10 @@ The dataset was split into training and test sets using an 80/20 split. Data pre
 ## Metrics
 
 - **Overall Test Performance**:
-  - Precision: 0.7622  
-  - Recall: 0.6384  
-  - F1 Score: 0.6948
+  - Precision: 0.7483  
+  - Recall: 0.6359  
+  - F1 Score: 0.6875
+
 
 - **Per-Slice Performance**:
   - Computed using a `performance_on_categorical_slice()` utility across all values of categorical features.

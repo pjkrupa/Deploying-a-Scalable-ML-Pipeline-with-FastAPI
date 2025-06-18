@@ -42,6 +42,8 @@ X_train, y_train, encoder, lb = process_data(
     training=True
     )
 
+print(f"Shape after process_data: {X_train.shape}")
+
 X_test, y_test, _, _ = process_data(
     test,
     categorical_features=cat_features,
@@ -50,6 +52,8 @@ X_test, y_test, _, _ = process_data(
     encoder=encoder,
     lb=lb,
 )
+
+print(X_test.shape)
 
 # TODO: use the train_model function to train the model on the training dataset
 model = train_model(

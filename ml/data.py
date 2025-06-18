@@ -50,6 +50,10 @@ def process_data(
     else:
         y = np.array([])
 
+    #print(f"Data shape from inside process_data: {X.shape}")
+    #print(f"Columns: {X.columns}")
+    #print(f"Data type: {type(X)}")
+
     X_categorical = X[categorical_features].values
     X_continuous = X.drop(*[categorical_features], axis=1)
 
